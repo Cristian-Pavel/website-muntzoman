@@ -63,28 +63,51 @@
                     Email: cristi.andrei.pavel[at]gmail.com
                 </p>
                 <form action="mail.php" method="POST">
-                    <div class="inputwrapper">
-                        <label for="name">Nume</label>
-                        <input type="text" name="name" id="name" placeholder="nume">
-                    </div>
-
-                    <div class="inputwrapper">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="nume@exemplu.com">
-                    </div>
                     
-                    <div class="inputwrapper">
-                        <textarea name="message" id="message" cols="75" rows="10" placeholder="Spune-ne cu ce te putem ajuta"></textarea>
-                    </div>
+                <div class="inputwrapper">
+                    <label for="name" class="newline">Nume</label>
+                    <input type="text" name="name" id="name" placeholder="nume">
+                </div>
 
-                    <div class="inputwrapper">
-                        
-                        <input type="checkbox" name="email-sub" id="email-sub" value="Da, ma abonez.">
-                        <label for="email-sub">Ma abonez prin e-mail la newsletter</label>
+                
+                <div class="inputwrapper">
+                    <label for="email" class="newline">Email</label>
+                    <input type="email" name="email" id="email" placeholder="nume@exemplu.com">
+                </div>
+                
+                
+                <div class="inputwrapper">
+                    <textarea name="message" id="message" cols="75" rows="10" placeholder="Spune-ne cu ce te putem ajuta"></textarea>
+                </div>
 
-                    </div>
+            
+                
+                <div class="inputwrapper">
+                    <input type="checkbox" name="email-sub" id="email-sub" value="Da, ma abonez.">
+                    <label for="email-sub">Ma abonez prin e-mail la newsletter</label>
+                </div>
 
-                    <input type="submit" value="Trimit mailul">
+
+            
+                <div class="inputwrapper">
+                    <p>Prefer sa primesc raspunsul prin:</p>
+                    <input type="radio" name="contact-pref" id="phone">
+                    <label for="phone" class="margin-right-a" value="phone">Telefon</label>
+                    <input type="radio" name="contact-pref" id="email2" value="email">
+                    <label for="email2">Email</label>
+                </div>
+            
+                <div class="inputwrapper">
+                    <select name="categIntrebari" id="categIntrebari">
+                        <option value="Not-Chosen">Alege categoria din care e intrebarea</option>
+                        <option value="educatie">Educatie montana</option>
+                        <option value="echipament">Consultanta echipament</option>
+                        <option value="ture">Organizare ture</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Trimit mailul" class="button-submit">
+                    
                 </form>
            </div>
 
